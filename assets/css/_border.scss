@@ -1,0 +1,26 @@
+// ============
+// Border
+// ============
+@mixin borderRed {
+    border: 1px dashed red;
+}
+
+@mixin borderOrange {
+    border: 1px dashed orange;
+}
+
+@mixin borderYellow {
+    border: 1px dashed rgb(214, 214, 10);
+}
+
+@mixin borderGreen {
+    border: 1px dashed green;
+}
+
+@mixin borderBlue {
+    border: 1px dashed blue;
+}
+
+@mixin borderPurple {
+    border: 1px dashed purple;
+}

@@ -1,0 +1,55 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px dashed red;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left {
+  border: 1px dashed orange;
+  width: 25%;
+  height: 100%;
+}
+
+.profile {
+  border: 1px dashed #d6d60a;
+  width: 100%;
+  height: 30%;
+}
+
+.sidebar {
+  border: 1px dashed #d6d60a;
+  width: 100%;
+  height: 70%;
+}
+
+.right {
+  border: 1px dashed orange;
+  width: 75%;
+  height: 100%;
+}
+
+.title {
+  border: 1px dashed #d6d60a;
+  width: 100%;
+  height: 20%;
+}
+
+.main {
+  border: 1px dashed #d6d60a;
+  width: 100%;
+  height: 80%;
+}
+/*# sourceMappingURL=stylemain.css.map */

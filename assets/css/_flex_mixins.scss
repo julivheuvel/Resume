@@ -1,0 +1,49 @@
+// ============
+// FLEX
+// ============
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+@mixin flexAround {
+    display: flex;
+    justify-content: space-around;
+}
+@mixin flexEvenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+// ============
+// FLEX with DIRECTION
+// ============
+// @mixin flexBetween($direction) {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     flex-direction: $direction;
+// }
+// @mixin flexCenter($direction) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: $direction;
+// }
+// @mixin flexAround($direction) {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     flex-direction: $direction;
+// }
+// @mixin flexEvenly($direction) {
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     flex-direction: $direction;
+// }

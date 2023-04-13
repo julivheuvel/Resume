@@ -1,0 +1,55 @@
+@import "./resets";
+@import "./flex_mixins";
+@import './border' ;
+@import './sizing/height' ;
+@import './sizing/width' ;
+@import './sizing/widthheight' ;
+
+
+
+
+body {
+    @include flexBetween;
+    @include borderRed;
+    @include vwh100;
+    
+}
+
+
+// ========== LEFT ==========
+.left {
+    @include borderOrange;
+    @include w25;
+    @include h100;
+}
+.profile {
+    @include borderYellow;
+    @include w100;
+    @include h30;
+}
+.sidebar {
+    @include borderYellow;
+    @include w100;
+    @include h70;
+}
+
+// ========== RIGHT ==========
+.right {
+    @include borderOrange;
+    @include w75;
+    @include h100;
+    
+}
+
+.title {
+    @include borderYellow;
+    @include w100;
+    @include h20;
+    
+}
+.main {
+    @include borderYellow;
+    @include w100;
+    @include h80;
+    
+}
