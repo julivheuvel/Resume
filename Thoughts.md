@@ -1,6 +1,3 @@
-
-
-
 //git remote add cpanel https://github.com/julivheuvel/Resume.git
 //git push cpanel
 
