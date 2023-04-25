@@ -2,21 +2,23 @@
 @import "./flex_mixins";
 @import './border' ;
 @import './sizing/height' ;
+@import './sizing/padding' ;
 @import './sizing/width' ;
 @import './sizing/widthheight' ;
-
-
+@import './welcome' ;
+@import './backgrounds/theme/colorTheme' ;
 
 
 body {
     @include flexBetween;
     @include borderRed;
     @include vwh100;
-    
+    background-color: $color1;
 }
 
-
-// ========== LEFT ==========
+// ==========================
+//          LEFT
+// ==========================
 .left {
     @include borderOrange;
     @include w25;
@@ -31,9 +33,22 @@ body {
     @include borderYellow;
     @include w100;
     @include h70;
+    @include p10;
+    @include flexBetween;
+    // @include flexColumn;
+    @include justifyDirection(end);
+    
+}
+.sidebar > ul {
+    text-decoration: none;
 }
 
-// ========== RIGHT ==========
+
+
+
+// ==========================
+//          RIGHT
+// ==========================
 .right {
     @include borderOrange;
     @include w75;

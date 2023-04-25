@@ -19,7 +19,24 @@
     justify-content: space-evenly;
 }
 
+// ============
+// FLEX DIRECTION
+// ============
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexColumnReverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
 
+@mixin justifyDirection($direction) {
+    justify-content: $direction;
+}
+@mixin alignDirection($direction) {
+    align-items: $direction;
+}
 // ============
 // FLEX with DIRECTION
 // ============
