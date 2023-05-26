@@ -1,0 +1,30 @@
+// ==========
+// Directions
+// ==========
+.d-flex {
+    display: flex;
+}
+.fd-col {
+    flex-direction: column;
+}
+.fd-col-reverse {
+    flex-direction: column-reverse;
+}
+.jc-between {
+    justify-content: space-between;
+}
+.jc-around {
+    justify-content: space-around;
+}
+.jc-evenly {
+    justify-content: space-evenly;
+}
+.ai-center {
+    align-items: center;
+}
+
+@for $i from 1 through 100 {
+    .g-#{$i} {
+        gap: #{$i}#{"%"}
+    }
+}
