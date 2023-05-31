@@ -78,11 +78,11 @@ const skills = {
     },
     19 : {
         name : "Git",
-        years : 2.5
+        years : 3
     },
     20 : {
         name : "Github",
-        years : 2.5
+        years : 3
     },
     21 : {
         name : "Express",
@@ -197,11 +197,14 @@ for(const [key, value] of Object.entries(skills)) {
     
     // creating new div element\
     const parentDiv = document.createElement("div")
-    parentDiv.className = "d-flex jc-start ai-center g-5 w-25"
+    parentDiv.className = "d-flex jc-start ai-center w-25"
     const divYear = document.createElement("div")
-    divYear.className = "skillYear p-1"
+    const yearPopup = document.createElement("span")
+    divYear.className = "skillYear w-10 t-center o-75 p-2 br-3 fs-15 m-1 bg-whitesmoke mod-whitesmoke text-palette1 "
+
     const divName = document.createElement("div")
-    divName.className = "skillName p-1"
+    divName.className = "skillName w-75 p-2 br-3 o-75 fs-15 bg-whitesmoke mod-whitesmoke text-palette1 "
+ 
 
     // getting content
     var elName = value.name
@@ -214,19 +217,11 @@ for(const [key, value] of Object.entries(skills)) {
     parentDiv.append(divYear)
     parentDiv.append(divName)
     current.append(parentDiv)
+
     // el = document.createElement("li");
 
 }
 
 
-// ===========
-// Scroll Speed
-// ===========
-jQuery(document).ready(function() {
-    
-    jQuery('.to-id').click(function(event) {
-        event.preventDefault();
-        $('html, body').animate({scrollTop:$('#scrollID').position().top}, 1000);
-        return false;
-    })
-});
+
+
