@@ -1,4 +1,4 @@
-console.log("we're here!");
+console.log("skills script connected!");
 
 // ===========
 // Skills
@@ -194,16 +194,21 @@ const skills = {
     },
 }
 for(const [key, value] of Object.entries(skills)) {
+    // console.log(key);
+    // console.log(value);
+    // console.log(value.name);
     
     // creating new div element\
     const parentDiv = document.createElement("div")
-    parentDiv.className = "d-flex jc-start ai-center w-25"
+    parentDiv.className = "d-flex jc-start ai-center p-1vh res-colwidth"
+
+
     const divYear = document.createElement("div")
     const yearPopup = document.createElement("span")
-    divYear.className = "skillYear w-10 t-center o-75 p-2 br-3 fs-15 m-1 bg-whitesmoke mod-whitesmoke text-palette1 "
+    divYear.className = "skillYear w-15 t-center o-75 p-3 br-3 m-1 bg-whitesmoke mod-whitesmoke text-palette1 res-text"
 
     const divName = document.createElement("div")
-    divName.className = "skillName w-75 p-2 br-3 o-75 fs-15 bg-whitesmoke mod-whitesmoke text-palette1 "
+    divName.className = "skillName w-75 p-3 br-3 o-75 bg-whitesmoke mod-whitesmoke text-palette1 res-text"
  
 
     // getting content
